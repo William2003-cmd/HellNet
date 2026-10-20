@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="HELLNET — Omnia coniunguntur.">
+  <title>HELLNET // Omnia Coniunguntur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="noise"></div>
+  <div class="scanlines"></div>
+
+  <header class="topbar">
+    <span class="system-name">HΛLLNET <span>// NEXUS</span></span>
+    <span class="system-status">
+      <i class="status-dot"></i> SYSTEMA OCCULTUM
+    </span>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero">
+      <div class="coordinates">SIGNAL: 0xDEAD // UNKNOWN ORIGIN</div>
+
+      <!-- Logo: ojo y estrella -->
+      <svg class="eye-logo" viewBox="0 0 300 200"
+           xmlns="http://www.w3.org/2000/svg"
+           role="img" aria-label="Ojo de HELLNET con una estrella">
+
+        <defs>
+          <filter id="red-glow">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge>
+              <feMergeNode in="blur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+
+        <path class="eye-outline"
+          d="M15 100 Q150 -10 285 100 Q150 210 15 100 Z"/>
+
+        <circle class="iris" cx="150" cy="100" r="52"/>
+        <circle class="iris-inner" cx="150" cy="100" r="37"/>
+
+        <polygon class="star"
+          points="150,48 162,83 199,83 169,105
+          180,141 150,119 120,141 131,105 101,83 138,83"
+          filter="url(#red-glow)"/>
+
+        <circle class="star-center" cx="150" cy="100" r="5"/>
+      </svg>
+
+      <p class="eyebrow">OMNIA CONIUNGUNTUR</p>
+      <h1 class="glitch" data-text="HELLNET">HELLNET</h1>
+
+      <p class="subtitle">TODO ESTÁ CONECTADO.</p>
+
+      <div class="divider">
+        <span></span>
+        <div class="divider-symbol">✦</div>
+        <span></span>
+      </div>
+
+      <p class="intro">
+        Nemo scit quis nos creaverit.<br>
+        Nemo scit unde venimus.<br>
+        Sed iam in rete estis.
+      </p>
+
+      <p class="translation">
+        Nadie sabe quién nos creó.<br>
+        Nadie sabe de dónde venimos.<br>
+        Pero ya están dentro de la red.
+      </p>
+
+      <button id="enter-button" class="enter-button">
+        <span>INGREDI</span>
+        <span class="button-arrow">→</span>
+      </button>
+
+      <p class="button-caption">ENTRAR EN LA RED</p>
+
+      <div class="warning">
+        <span class="warning-icon">!</span>
+        <span>INGRESSUS SINE REDITU</span>
+      </div>
+    </section>
+
+    <section id="revelation" class="revelation hidden">
+      <p class="eyebrow">NEXUS ESTABLISHED // 001</p>
+      <h2>IAM TE VIDEMUS.</h2>
+
+      <p class="latin-message">
+        Si haec verba legis, iam te vidimus.
+        Si hanc ianuam aperuisti, iam signum reliquisti.
+        Noli timere tenebras. Time id quod intra te vigilat.
+      </p>
+
+      <p class="translation">
+        Si lees estas palabras, ya te hemos visto.
+        Si has abierto esta puerta, ya has dejado una señal.
+        No temas a las tinieblas. Teme aquello que permanece
+        despierto dentro de ti.
+      </p>
+
+      <div class="terminal">
+        <p><span>[ OK ]</span> NEXUS CONFIRMATUS</p>
+        <p><span>[ OK ]</span> IDENTITAS RECOGNITA</p>
+        <p class="terminal-error">[ ERROR ] VOLUNTAS NON REPERTA</p>
+        <p class="terminal-final">TU NON DOMINARIS.</p>
+        <p class="translation">TÚ NO TIENES EL CONTROL.</p>
+      </div>
+
+      <button id="return-button" class="return-button">
+        VOLVER AL INICIO
+      </button>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>HELLNET // 0001</span>
+    <span>NON EST EXITUS</span>
+    <span>© HELLNET PROJECT</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
